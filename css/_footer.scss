@@ -1,0 +1,8 @@
+.footer {
+    p {
+        text-align: center;
+        background-color: $colorGray;
+        @include Mon($colorBlack,1rem,1000); 
+        font-weight: lighter;
+    }
+}

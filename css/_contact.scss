@@ -1,0 +1,40 @@
+.contact {
+    background-color: $colorGray;
+    padding-bottom: 7rem;
+    padding: 10rem 0 9.5rem 0;
+    @media screen and(min-width: 767px) {
+        padding: 9.5rem 0 10rem 0;
+    }
+    .section-ttl {
+        text-align: center;
+        margin-bottom: 3.8rem;
+        @media screen and(min-width: 767px) {
+            margin-bottom: 30px;
+        }
+        h2 {
+            @include Mon($colorBlack,4rem,1000); 
+            @media screen and(min-width: 767px) {
+                font-size: 6rem;
+            }
+        }
+        p {
+            @media screen and(min-width: 767px) {
+                font-size: 2.4rem;
+            }
+        }
+    }
+
+    &-icon {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        &__twitter {
+            width: 76px;
+            margin: 10px;
+        }
+        &__email {
+            width: 76px;
+            margin: 10px;
+        }
+    }
+}

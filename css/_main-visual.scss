@@ -1,0 +1,99 @@
+.main-visual {
+  background-color: $colorGray;
+  padding-bottom: 2.5rem;
+  @media screen and(min-width: 767px) {
+    padding-bottom: 0;
+  }
+    $this: &;
+    .container {
+      width: 100%;
+      @media screen and(min-width: 767px) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        position: relative;
+      }
+      #{$this}__img {
+        background-image: url("../img/my-portfolio-top1.png");
+        background-repeat: no-repeat;
+        height: 100vw;
+        background-size: cover;
+        @media screen and(min-width: 767px) {
+          background-image: url("../img/my-portfolio-top@2x.png");
+          width: calc((1030/1280)*100vw);
+          margin-left: auto;
+          height: 700px;
+        }
+      }
+      #{$this}__txt {
+        margin-top: -11.4rem;
+        display: flex;
+        flex-direction: column;
+        @media screen and(min-width: 767px) {
+          width: calc((360/1280)*100vw);
+          margin-top: 13.3rem;
+          margin-left: 7.7rem;
+          position: absolute;
+          top: 0;
+          left: 1rem;
+        }
+        span:nth-child(1) {
+          width: calc((155/375)*100vw);
+          margin-bottom: 2rem;
+          @media screen and(min-width: 767px) {
+            font-size: 8rem;
+            width: calc((280/1280)*100vw);
+          }
+          .span-inner1 {
+            width: calc((155/375)*100vw);
+            background-color: white;
+            @include Mon($colorBlack,4.5rem,700);
+            @media screen and(min-width: 767px) {
+              font-size: 8rem;
+              width: calc((280/1280)*100vw);
+            }
+          }
+        }
+        span:nth-child(2) {
+          font-size: 5rem;
+          width: calc((174/375)*100vw);
+          @include Mon($colorBlack,4rem,700);
+          margin-bottom: 2rem;
+
+          @media screen and(min-width: 767px) {
+            font-size: 8rem;
+            width: calc((310/1280)*100vw);
+          }
+          .span-inner2 {
+            width: calc((174/375)*100vw);
+            background-color: white;
+            @include Mon($colorBlack,4.5rem,700);
+            @media screen and(min-width: 767px) {
+              font-size: 8rem;
+              width: calc((310/1280)*100vw);
+            }
+          }
+        }
+        span:nth-child(3) {
+          color: $colorBlack;
+          font-size: 5rem;
+          width: calc((300/375)*100vw);
+          @include Mon($colorBlack,4rem,700);
+
+          @media screen and(min-width: 767px) {
+            font-size: 8rem;
+            width: calc((800/1280)*100vw);
+          }
+          .span-inner3 {
+            width: calc((300/375)*100vw);
+            background-color: white;
+            @include Mon($colorBlack,4.5rem,700);
+            @media screen and(min-width: 767px) {
+              font-size: 8rem;
+              width: calc((800/1280)*100vw);
+            }
+          }
+        }
+      }
+    }
+}

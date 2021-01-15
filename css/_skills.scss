@@ -1,0 +1,89 @@
+.skills {
+    background-color: $colorGray;
+    padding: 10rem 0 9.5rem 0;
+    @media screen and(min-width: 767px) {
+      padding: 9.5rem 0 23.1rem 0;
+  }
+  .section-ttl {
+      text-align: center;
+      margin-bottom: 3.8rem;
+      @media screen and(min-width: 767px) {
+        margin-bottom: 14.9rem;
+    }
+      h2 {
+        @include Mon($colorBlack,4rem,1000);
+        @media screen and(min-width: 767px) {
+          font-size: 6rem;
+      }
+      }
+      p {
+        @media screen and(min-width: 767px) {
+          font-size: 2.4rem;
+          margin-bottom: 14.9rem;
+      }
+      }
+    } 
+  
+
+    .container {
+      padding: 0 3rem;
+      @media screen and(min-width: 767px) {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: calc((1126/1280)*100%);
+        margin: 0 auto;
+        padding: 0;
+      }
+      &-top {
+        margin-bottom: 3.8rem;
+        text-align: center;
+        @media screen and(min-width: 767px) {
+          margin-bottom: 14.9rem;
+          width: calc((1126/1280)*100%);
+          margin: 0 auto;
+          text-align: inherit;
+      }
+        h3 {
+          @include Mon($colorBlack,3rem,1000);
+          @media screen and(min-width: 767px) {
+            font-size: 6rem;
+        }
+        }
+        p {
+          @media screen and(min-width: 767px) {
+            font-size: 2.4rem;
+            margin-bottom: 14.9rem;
+        }
+        }
+      } 
+      &-list {
+        margin-bottom: 6rem;
+        @media screen and(min-width: 767px) {
+          margin-bottom: 0;
+          width: (437/1126)*100%;
+        }
+        &__icon {
+          text-align: center;
+          margin-bottom: 3rem;
+        }
+        &__txt {
+            @media screen and(min-width: 767px) {
+                margin-bottom: 50px;
+              }
+          p:nth-child(1) {
+            text-align: center;
+            font-size: 2.4rem;
+            margin-bottom: 1.4rem;
+          }
+          p:nth-child(2) {
+            font-size: 1.6rem;
+            color: $colorGrayf;
+          }
+        }
+      }
+      &-list + &-list  {
+        margin-right: 3rem;
+      }
+    }
+  }

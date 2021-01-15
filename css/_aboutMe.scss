@@ -1,0 +1,89 @@
+.aboutMe {
+  padding: 10rem 0 9.5rem 0;
+  @media screen and(min-width: 767px) {
+    padding: 9.5rem 0 23.1rem 0;
+}
+.section-ttl {
+    text-align: center;
+    margin-bottom: 3.8rem;
+    @media screen and(min-width: 767px) {
+      margin-bottom: 14.9rem;
+  }
+    h2 {
+      @include Mon($colorBlack,4rem,1000);
+      @media screen and(min-width: 767px) {
+        font-size: 6rem;
+    }
+    }
+    p {
+      @media screen and(min-width: 767px) {
+        font-size: 2.4rem;
+        margin-bottom: 14.9rem;
+    }
+    }
+  } 
+
+  .container {
+    padding: 0 3rem;
+    @media screen and(min-width: 767px) {
+      display: flex;
+      justify-content: space-between;
+      width: calc((1126/1280)*100%);
+      margin: 0 auto;
+      padding: 0;
+    }
+    &-list {
+      margin-bottom: 6rem;
+      @media screen and(min-width: 767px) {
+        margin-bottom: 0;
+        width: 20%;
+      }
+      &__icon {
+        text-align: center;
+        margin-bottom: 3rem;
+      }
+      &__txt {
+        p:nth-child(1) {
+          text-align: center;
+          font-size: 2.4rem;
+          margin-bottom: 1.4rem;
+        }
+        p:nth-child(2) {
+          font-size: 1.6rem;
+          color: $colorGrayf;
+        }
+      }
+    }
+    &-list + &-list  {
+      margin-right: 3rem;
+    }
+  }
+  .btn {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    background-color: $colorBlack;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    transition: 0.3s;/*マウスホバー時の反映を滑らかに*/
+    border: 1px solid $colorGrayf;
+    @include Mon($colorWhite,2rem,1000); 
+    line-height: 50px;
+    padding-left: 20px;
+ }
+ .btn::before {
+    content: "p";
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    transform: translateY(-50%);
+ }
+ .btn:hover {
+    color: $colorBlack;
+    position: relative;
+    transition: 0.3s;/*マウスアウト時の反映を滑らかに*/
+    background-color: White;
+    border: 1px solid $colorBlack;
+ }
+}

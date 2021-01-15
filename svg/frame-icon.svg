@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="120" height="120" viewBox="0 0 120 120">
+  <g id="グループ_95" data-name="グループ 95" transform="translate(8899 -3194)">
+    <rect id="長方形_30" data-name="長方形 30" width="120" height="120" transform="translate(-8899 3194)" fill="rgba(178,178,178,0)"/>
+    <g id="グループ_89" data-name="グループ 89" transform="translate(1150 -52)">
+      <g id="flame" transform="translate(-10043 3252)">
+        <rect id="長方形_22" data-name="長方形 22" width="71.319" height="19.41" transform="translate(18.434 36.432)" fill="#4b4b4b"/>
+        <rect id="長方形_23" data-name="長方形 23" width="27.802" height="23.874" transform="translate(61.951 64.909)" fill="#4b4b4b"/>
+        <rect id="長方形_24" data-name="長方形 24" width="32.637" height="3.626" transform="translate(18.434 65.27)" fill="#4b4b4b"/>
+        <rect id="長方形_25" data-name="長方形 25" width="32.637" height="3.626" transform="translate(18.434 84.796)" fill="#4b4b4b"/>
+        <rect id="長方形_26" data-name="長方形 26" width="32.637" height="3.626" transform="translate(18.434 75.034)" fill="#4b4b4b"/>
+        <path id="パス_21" data-name="パス 21" d="M87.993,0h-67.8A20.2,20.2,0,0,0,0,20.2v64.17a23.825,23.825,0,0,0,23.821,23.821H84.366a23.823,23.823,0,0,0,23.821-23.821V20.2A20.2,20.2,0,0,0,87.993,0ZM98.215,84.367A13.85,13.85,0,0,1,84.366,98.216H23.821A13.849,13.849,0,0,1,9.972,84.367V25.082H98.215Z" transform="translate(0 -0.002)" fill="#4b4b4b"/>
+      </g>
+    </g>
+  </g>
+</svg>
