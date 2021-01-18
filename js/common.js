@@ -39,17 +39,6 @@ $(function(){
   //   ScrollButton(".nav-target__works", ".works");
   // });
 
-var position = $(".header").offset().top;//最初の要素の、ドキュメント上での表示位置[y軸]を返す
-
-$('.works').click(function(){
-  $("html,body").animate({
-      scrollTop : position
-  }, {
-      queue : false
-  });
-});
-
-
 
 ///////スクロール////////
 
@@ -83,7 +72,7 @@ $('#nav-target__aboutMe').click(function(){
   });
 });
 
-var positionSlills = $(".skills").offset().top;　//最初の要素の、ドキュメント上での表示位置[y軸]を返す
+var positionSkills = $(".skills").offset().top;　//最初の要素の、ドキュメント上での表示位置[y軸]を返す
 
 $('#nav-target__skills').click(function(){
   $("html,body").animate({

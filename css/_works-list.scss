@@ -1,0 +1,95 @@
+.works-list {
+  .section-ttl {
+    text-align: center;
+    margin-bottom: 3.8rem;
+    h2 {
+        @include Mon($colorBlack,4rem,1000); 
+        @media screen and(min-width: 767px) {
+          font-size: 6rem;
+        }
+    }
+    p {
+        @media screen and(min-width: 767px) {
+          font-size: 2.4rem;
+        }
+    }
+  }
+
+  .container {
+    @media screen and(min-width: 767px) {
+      display: flex;
+      width: calc((1126/1280)*100%);
+      margin: 0 auto;
+      flex-direction: column;
+    }
+    .works-group {
+      li {
+        margin-bottom: 20px;
+        p {
+          font-size: 3rem;
+          margin-bottom: 10px;
+        }
+        span {
+          font-size: 2rem;
+          color: $colorGrayf;
+        }
+      }
+      li:nth-child(4) {
+        span {
+          display: block;
+          color: $colorGrayf;
+          a {
+            color: $colorGrayf;
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+
+  .portfolio-img {
+    @media screen and(min-width: 767px) {
+      display: flex;
+      width: calc((1126/1280)*100%);
+      margin: 0 auto;
+      justify-content: space-around;
+      align-items: center;
+    }
+    .img-left {
+      @media screen and(min-width: 767px) {
+        width: calc((525/1126)*100%);
+      }
+      img {
+        width: 100%;
+      }
+    }
+    .img-right {
+      @media screen and(min-width: 767px) {
+        width: calc((525/1126)*100%);
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  .top-link {
+    position: relative;
+    span {
+      text-align: center;
+      height: 100px;
+      width: 100px;
+      line-height: 100px;
+      border-radius: 50%;
+      background-color: $colorBlack;
+      position: fixed;
+      bottom: 0;
+      right: 50px;
+      display: block;
+      a {
+        font-size: 1.5rem;
+        color: $colorWhite;
+      }
+    }
+  }
+}

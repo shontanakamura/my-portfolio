@@ -19,7 +19,7 @@
         }
     }
     .container {
-        padding: 0 27px;
+        padding: 0 20px;
         @media screen and(min-width: 767px) {
             display: flex;
             width: calc((1126/1280)*100%);
@@ -29,9 +29,62 @@
         }
         &-works {
             margin-bottom: 8rem;
-            img {
+            &__img {
                 margin-bottom: 20px;
+                .works-link {
+                    display: block;
+                    position: relative;
+                    img {
+                        vertical-align: bottom;
+                        overflow: hidden;
+                    }
+                    img:hover {
+                        background-color: rgba(0, 0, 0 ,.5);
+                        transform: scale(1.05); //画像の拡大比率（１０５％）
+                    }
+                }
+                .works-link::before {
+                    content: ""; 
+                    position: absolute; 
+                    display: inline-block; 
+                    width: 100%;
+                    height: 100%;
+                    // background-color: $colorBlack;
+                    // opacity: 0.2;
+                    transition: all 0.6s ease;
+                }
+                .works-link:hover::before {
+                    position: absolute; 
+                    display: inline-block; 
+                    width: 100%;
+                    height: 100%;
+                    background-color: $colorBlack;
+                    opacity: .75;
+                    transition: all 0.6s ease;
+                }
+
+                .works-link::after {
+                    content: "制作物をみる"; 
+                    position: absolute; 
+                    display: inline-block; 
+                    top: 50%; 
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    opacity: 0;
+                }
+                .works-link:hover::after {
+                    content: "制作物をみる";
+                    font-size: 2rem;
+                    position: absolute; 
+                    display: inline-block; 
+                    color: $colorWhite;
+                    top: 50%; 
+                    left: 50%;
+                    transform: translate(-50%,-50%);
+                    opacity: 1.0;
+                }
             }
+
             @media screen and(min-width: 767px) {
                 width: calc((333/1126)*100%);
                 margin: 0 auto;
@@ -64,6 +117,12 @@
                 }
                 p:nth-child(4){
                     margin-bottom: 10px;
+                    font-size: 0.8rem;
+                    a {
+                        word-wrap:break-word;
+                        color: $colorGrayf;
+                        text-decoration: underline;
+                    }
                 }
             }
         }
