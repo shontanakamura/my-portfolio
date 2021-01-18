@@ -28,19 +28,15 @@
          width: calc((1126/1280)*100%);
          margin: 0 auto;
          justify-content: space-around;
-
          align-items: center;
       }
       &-img {
          margin-bottom: 4rem;
-         background-image: url("../img/my-concept-img.png");
+         padding: 0 20px;
          background-repeat: no-repeat;
-         height: 100vw;
          background-size: cover;
          background-position: center;
          @media screen and(min-width: 767px) {
-            background-image: url("../img/my-concept-img-pc@2x.png");
-            width: calc((470/1126)*100%);
             margin-bottom: 0;
             height: 490px;
          }
@@ -50,7 +46,7 @@
       }
       &-txt {
          font-size: 1.9rem;
-         padding: 0 3rem;
+         padding: 0 20px;
          @media screen and(min-width: 767px) {
             width: calc((544/1126)*100%);
             padding: 0;

@@ -29,14 +29,7 @@
           align-items: center;
        }
        &-img {
-        //   margin-bottom: 4rem;
-        //   background-image: url("../img/plofile-img-sp.png");
-        //   background-repeat: no-repeat;
-        //   height: 100vw;
-        //   background-size: cover;
-        //   background-position: center;
-        //   padding: 0 3rem;
-        //   width: (335/375)*100%;
+         padding: 0 20px;
           @media screen and(min-width: 767px) {
              width: calc((360/1126)*100%);
              margin-bottom: 0;
@@ -47,7 +40,7 @@
        }
        &-txt {
           font-size: 1.9rem;
-          padding: 0 3rem;
+          padding: 0 20px;
           @media screen and(min-width: 767px) {
              width: calc((502/1126)*100%);
              padding: 0;

@@ -165,10 +165,10 @@
     &__group {
       .target-list.show {
         @include Mon($colorWhite,4rem,1000); 
-        line-height: 2.5;
+        line-height: 2.0;
         @media screen and(min-width: 767px) {
           font-size: 6rem;
-
+          line-height: 1.5;
         }
       }
     }
