@@ -30,6 +30,7 @@ $('.top-btn').click(function(){
 
 
 
+
 /////スクロール////////
 var positionScroll = $(".header-box").scrollTop().top;//最初の要素の、ドキュメント上での表示位置[y軸]を返す
 
@@ -40,7 +41,6 @@ $('.top-btn').click(function(){
       queue : false
   });
 });
-
 
 
 var positionProfile = $(".profile").offset().top;　//最初の要素の、ドキュメント上での表示位置[y軸]を返す
