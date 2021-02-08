@@ -29,7 +29,7 @@
           </li>
           <li>
             <p>GitHub</p>
-            <span><a href="http://nakamura0128.com/">http://nakamura0128.com/</a></span>
+            <span><a href="https://github.com/shontanakamura/my-portfolio">https://github.com/shontanakamura/my-portfolio</a></span>
           </li>
           <li>
             <p>URL</p>
