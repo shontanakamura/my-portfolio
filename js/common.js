@@ -18,29 +18,30 @@ $(function(){
   });
 });
 
+var position = $(".header").offset().top;//最初の要素の、ドキュメント上での表示位置[y軸]を返す
+
+$('.top-btn').click(function(){
+  $("html,body").animate({
+      scrollTop : position
+  }, {
+      queue : false
+  });
+});
 
 
 
-  // $(function(){
-  //   function ScrollButton(button, place){
-  //     // スクロールさせたい場所を定義
-  //     var position = $(place).scrollTop;  
-  //     // 指定のボタンを押したら、スクロールさせる。
-  //     $(button).click(function(){
-  //       $("html,body").animate({
-  //           scrollTop : position
-  //       }, {
-  //           queue : false
-  //       });
-  //     });
-  //   }
+/////スクロール////////
+var positionScroll = $(".header-box").scrollTop().top;//最初の要素の、ドキュメント上での表示位置[y軸]を返す
 
-  //   // 使う場合、下記のようにする。ScrollButton(ボタン, スクロールさせたい場所)
-  //   ScrollButton(".nav-target__works", ".works");
-  // });
+$('.top-btn').click(function(){
+  $("html,body").animate({
+      scrollTop : positionScroll
+  }, {
+      queue : false
+  });
+});
 
 
-///////スクロール////////
 
 var positionProfile = $(".profile").offset().top;　//最初の要素の、ドキュメント上での表示位置[y軸]を返す
 
@@ -103,3 +104,4 @@ $('#nav-target__contact').click(function(){
 });
 
 ///////スクロール////////
+

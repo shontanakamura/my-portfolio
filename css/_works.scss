@@ -67,6 +67,7 @@
                     content: "制作物をみる"; 
                     position: absolute; 
                     display: inline-block; 
+                    white-space: nowrap;
                     top: 50%; 
                     left: 50%;
                     transform: translate(-50%,-50%);
@@ -78,6 +79,7 @@
                     position: absolute; 
                     display: inline-block; 
                     color: $colorWhite;
+                    white-space: nowrap;
                     top: 50%; 
                     left: 50%;
                     transform: translate(-50%,-50%);

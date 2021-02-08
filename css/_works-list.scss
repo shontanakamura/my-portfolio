@@ -1,4 +1,6 @@
 .works-list {
+  background-color: $colorGray;
+  padding-top: 100px;
   .section-ttl {
     text-align: center;
     margin-bottom: 3.8rem;
@@ -16,22 +18,30 @@
   }
 
   .container {
+    
+    padding: 0 30px;
     @media screen and(min-width: 767px) {
       display: flex;
-      width: calc((1126/1280)*100%);
+      width: (1126/1280)*100%;
       margin: 0 auto;
       flex-direction: column;
+      padding: 0;
     }
     .works-group {
       li {
         margin-bottom: 20px;
         p {
-          font-size: 3rem;
+          font-size: 2.4rem;
           margin-bottom: 10px;
+          @media screen and(min-width: 767px) {
+            font-size: 3rem;
+          }
         }
         span {
-          font-size: 2rem;
           color: $colorGrayf;
+          @media screen and(min-width: 767px) {
+            font-size: 2rem;
+          }
         }
       }
       li:nth-child(4) {
@@ -41,6 +51,18 @@
           a {
             color: $colorGrayf;
             text-decoration: underline;
+            word-break: break-word;
+          }
+        }
+      }
+      li:last-child {
+        span {
+          display: block;
+          color: $colorGrayf;
+          a {
+            color: $colorGrayf;
+            text-decoration: underline;
+            word-break: break-word;
           }
         }
       }
@@ -57,7 +79,7 @@
     }
     .img-left {
       @media screen and(min-width: 767px) {
-        width: calc((525/1126)*100%);
+        width: (525/1126)*100%;
       }
       img {
         width: 100%;
@@ -65,7 +87,7 @@
     }
     .img-right {
       @media screen and(min-width: 767px) {
-        width: calc((525/1126)*100%);
+        width: (525/1126)*100%;
       }
       img {
         width: 100%;
@@ -83,9 +105,12 @@
       border-radius: 50%;
       background-color: $colorBlack;
       position: fixed;
-      bottom: 0;
-      right: 50px;
+      bottom: 10px;
+      right: 30px;
       display: block;
+      @media screen and(min-width: 767px) {
+        right: 50px;
+      }
       a {
         font-size: 1.5rem;
         color: $colorWhite;

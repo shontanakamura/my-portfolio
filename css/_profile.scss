@@ -1,71 +1,91 @@
 .profile {
-    padding: 10rem 0 9.5rem 0;
-    border-bottom: 1px bold $colorGray;
-    @media screen and(min-width: 767px) {
-       padding: 9.5rem 0 23.1rem 0;
-    }
-    .section-ttl {
-       text-align: center;
-       margin-bottom: 3.8rem;
-       h2 {
-          @include Mon($colorBlack,4rem,1000); 
-          @media screen and(min-width: 767px) {
-             font-size: 6rem;
-          }
-       }
-       p {
-          @media screen and(min-width: 767px) {
-             font-size: 2.4rem;
-          }
-       }
-    }
- 
-    .container {
-       @media screen and(min-width: 767px) {
-          display: flex;
-          width: calc((1126/1280)*100%);
-          margin: 0 auto;
-          justify-content: space-around;
-          align-items: center;
-       }
-       &-img {
+   padding: 10rem 0 9.5rem 0;
+   border-bottom: 1px bold $colorGray;
+   @media screen and(min-width: 767px) {
+      padding: 9.5rem 0 23.1rem 0;
+   }
+   .section-ttl {
+      text-align: center;
+      margin-bottom: 3.8rem;
+      h2 {
+         @include Mon($colorBlack,4rem,1000); 
+         @media screen and(min-width: 767px) {
+            font-size: 6rem;
+         }
+      }
+      p {
+         @media screen and(min-width: 767px) {
+            font-size: 2.4rem;
+         }
+      }
+   }
+
+   .container {
+      @media screen and(min-width: 767px) {
+         display: flex;
+         width: (1126/1280)*100%;
+         margin: 0 auto;
+         justify-content: space-around;
+         align-items: center;
+      }
+      &-img {
+      padding: 0 20px;
+         @media screen and(min-width: 767px) {
+            width: (360/1126)*100%;
+            margin-bottom: 0;
+         }
+         img {
+            width: 100%;
+         }
+      }
+      &-txt {
          padding: 0 20px;
-          @media screen and(min-width: 767px) {
-             width: calc((360/1126)*100%);
-             margin-bottom: 0;
-          }
-          img {
-             width: 100%;
-          }
-       }
-       &-txt {
-          font-size: 1.9rem;
-          padding: 0 20px;
-          @media screen and(min-width: 767px) {
-             width: calc((502/1126)*100%);
-             padding: 0;
-          }
-          .myName, .enName {
-             font-size: 2.4rem;
-             display: inline-block;
-             margin-bottom: 20px;
-          }
-          p:nth-of-type(1) {
-             margin-bottom: 2rem;
-             font-size: 1.8rem;
-          }
-          p:nth-of-type(2) {
-             margin-bottom: 2rem;
-             font-size: 1.8rem;
-          }
-          p:nth-of-type(3) {
-             margin-bottom: 2rem;
-             font-size: 2rem;
-          }
-          p:nth-of-type(4) {
-             margin-bottom: 2rem;
-             font-size: 2rem;
-          }
-       } 
-    }
- }
+         @media screen and(min-width: 767px) {
+            width: (502/1126)*100%;
+            padding: 0;
+         }
+         .myName{
+            font-size: 2rem;
+            display: inline-block;
+            margin-bottom: 20px;
+            font-weight: bold;
+            @media screen and(min-width: 767px) {
+               font-size: 2.4rem;
+            }
+         }
+         .enName {
+         @include Mon($colorBlack,1.5rem,700);
+         font-weight: lighter;
+         display: inline-block;
+         margin-bottom: 20px;
+         font-weight: bold;
+         }
+         p:nth-of-type(1) {
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+         }
+         p:nth-of-type(2) {
+            margin-bottom: 2rem;
+            font-size: 1.8rem;
+         }
+         p:nth-of-type(3) {
+            margin-bottom: 2rem;
+            @media screen and(min-width: 767px) {
+               font-size: 2rem;
+            }
+         }
+         p:nth-of-type(4) {
+            margin-bottom: 2rem;
+            @media screen and(min-width: 767px) {
+               font-size: 2rem;
+            }
+         }
+         p:nth-of-type(5) {
+            margin-bottom: 2rem;
+            @media screen and(min-width: 767px) {
+               font-size: 2rem;
+            }
+         }
+      } 
+   }
+}
